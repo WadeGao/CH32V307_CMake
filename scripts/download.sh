@@ -1,0 +1,1 @@
+/data/MRS_Toolchain_Linux_x64_V1.70/OpenOCD/bin/openocd -f /data/MRS_Toolchain_Linux_x64_V1.70/OpenOCD/bin/wch-riscv.cfg -c init -c halt -c "flash erase_sector wch_riscv 0 last" -c "program ch32v307-ninja.bin" -c "verify_image ch32v307-ninja.bin" -c wlink_reset_resume -c exit
